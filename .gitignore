@@ -1,0 +1,21 @@
+# Gradle / Android build artifacts
+.gradle/
+build/
+**/build/
+
+# Local SDK path
+local.properties
+
+# IDE files
+.idea/
+*.iml
+
+# Kotlin metadata
+.kotlin/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

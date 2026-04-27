@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android System Keyboard</string>
+    <string name="settings_title">Keyboard Settings</string>
+    <string name="chat_mode_off">Chat: Off</string>
+    <string name="chat_mode_on">Chat: On</string>
+    <string name="chat_status_keyboard">Normal keyboard mode</string>
+    <string name="chat_status_chatbot">Chatbot mode (offline)</string>
+    <string name="chat_draft_default">Type with keys, then press Enter to chat.</string>
+    <string name="chat_response_default">Assistant replies will appear here.</string>
+    <string name="chat_thinking">Thinking...</string>
+    <string name="chat_loading_model">Loading tiny LLM...</string>
+    <string name="chat_model_missing">No GGUF model is set. Open Settings and enter the full local file path.</string>
+    <string name="chat_model_not_found">Model file not found at: %1$s</string>
+    <string name="chat_model_error">Could not load the local model.</string>
+    <string name="chat_chatting_error">Generation failed.</string>
+    <string name="download_model_button">Download Tiny LLM</string>
+    <string name="download_model_ready">Model will be saved in Android/data app folder.</string>
+    <string name="download_model_starting">Starting download...</string>
+    <string name="download_model_downloading">Downloading model...</string>
+    <string name="download_model_finished">Model downloaded to Android/data app folder.</string>
+    <string name="download_model_failed">Download failed.</string>
+    <string name="download_model_exists">Model already exists in Android/data app folder.</string>
+    <string name="tiny_llm_download_url">https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/resolve/main/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf</string>
+    <string name="tiny_llm_file_name">tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf</string>
+
+    <!-- Special characters for keyboard -->
+    <string name="key_question_123">\u003F123</string>
+    <string name="key_at">@</string>
+    <string name="key_backslash">\</string>
+    <string name="key_question">\u003F</string>
+
+    <string-array name="key_size_entries">
+        <item>Small (36dp)</item>
+        <item>Medium (48dp)</item>
+        <item>Large (60dp)</item>
+    </string-array>
+
+    <string-array name="key_size_values">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+    </string-array>
+</resources>

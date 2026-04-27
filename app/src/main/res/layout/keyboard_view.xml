@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="#111111">
+
+        <Button
+            android:id="@+id/chat_toggle_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:tag="CHAT_TOGGLE"
+            android:text="@string/chat_mode_off"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/chat_status_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:layout_margin="2dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/chat_status_keyboard"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A1A1A"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/chat_draft_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#252525"
+            android:padding="8dp"
+            android:text="@string/chat_draft_default"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/chat_response_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#202020"
+            android:clickable="true"
+            android:focusable="false"
+            android:padding="8dp"
+            android:text="@string/chat_response_default"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/keyboard_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0A0A0A"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="1" android:tag="1" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="2" android:tag="2" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="3" android:tag="3" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="4" android:tag="4" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="5" android:tag="5" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="6" android:tag="6" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="7" android:tag="7" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="8" android:tag="8" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="9" android:tag="9" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:text="0" android:tag="0" android:textSize="16sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="Q" android:tag="Q" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="W" android:tag="W" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="E" android:tag="E" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="R" android:tag="R" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="T" android:tag="T" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="Y" android:tag="Y" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="U" android:tag="U" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="I" android:tag="I" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="O" android:tag="O" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="P" android:tag="P" android:textSize="18sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Space android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="0.5" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="A" android:tag="A" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="S" android:tag="S" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="D" android:tag="D" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="F" android:tag="F" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="G" android:tag="G" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="H" android:tag="H" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="J" android:tag="J" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="K" android:tag="K" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="L" android:tag="L" android:textSize="18sp" android:layout_margin="2dp" />
+                <Space android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="⇧" android:tag="SHIFT" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="Z" android:tag="Z" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="X" android:tag="X" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="C" android:tag="C" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="V" android:tag="V" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="B" android:tag="B" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="N" android:tag="N" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="M" android:tag="M" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1.2" android:text="↶" android:tag="BACKSPACE" android:textSize="18sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1.3" android:text="@string/key_question_123" android:tag="PAGE_NUM" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="4.8" android:text="Space" android:tag="SPACE" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="," android:tag="," android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="." android:tag="." android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1.2" android:text="↵" android:tag="ENTER" android:textSize="18sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0A0A0A"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="!" android:tag="!" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="@" android:tag="@" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="#" android:tag="#" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="$" android:tag="$" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="%" android:tag="%" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="^" android:tag="^" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="&amp;" android:tag="&amp;" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="*" android:tag="*" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="(" android:tag="(" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text=")" android:tag=")" android:textSize="18sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="-" android:tag="-" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="+" android:tag="+" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="=" android:tag="=" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="/" android:tag="/" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="\\" android:tag="\\" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="[" android:tag="[" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="]" android:tag="]" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="{" android:tag="{" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="}" android:tag="}" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1.2" android:text="↶" android:tag="BACKSPACE" android:textSize="18sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="`" android:tag="`" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="~" android:tag="~" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="_" android:tag="_" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="|" android:tag="|" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="&lt;" android:tag="&lt;" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="&gt;" android:tag="&gt;" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text=":" android:tag=":" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text=";" android:tag=";" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="," android:tag="," android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="." android:tag="." android:textSize="18sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="ABC" android:tag="PAGE_ABC" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="4.8" android:text="Space" android:tag="SPACE" android:textSize="16sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="@string/key_question" android:tag="KEY_QUESTION" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1" android:text="&quot;" android:tag="&quot;" android:textSize="18sp" android:layout_margin="2dp" />
+                <Button android:layout_width="0dp" android:layout_height="52dp" android:layout_weight="1.2" android:text="↵" android:tag="ENTER" android:textSize="18sp" android:layout_margin="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

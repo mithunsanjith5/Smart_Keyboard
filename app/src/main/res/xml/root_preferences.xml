@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Appearance">
+        <SwitchPreferenceCompat
+            app:key="dark_theme"
+            app:title="Dark Mode"
+            app:summary="Enable dark theme for keyboard"
+            app:defaultValue="true" />
+
+        <ListPreference
+            app:key="key_size"
+            app:title="Key Size"
+            app:summary="Select keyboard key size"
+            app:entries="@array/key_size_entries"
+            app:entryValues="@array/key_size_values"
+            app:defaultValue="medium" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Interaction">
+        <SwitchPreferenceCompat
+            app:key="haptic_feedback"
+            app:title="Haptic Feedback"
+            app:summary="Vibrate on key press"
+            app:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Offline LLM">
+        <EditTextPreference
+            app:key="tiny_llm_model_path"
+            app:title="Model Path"
+            app:summary="Absolute path to a local GGUF model file"
+            app:defaultValue="/sdcard/Android/data/com.example.systemkeyboard/files/models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="tiny_llm_system_prompt"
+            app:title="System Prompt"
+            app:summary="Prompt used to steer the assistant"
+            app:defaultValue="You are a concise offline keyboard assistant."
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
